@@ -14,13 +14,10 @@ import { ChildBComponent } from './child-b/child-b.component';
     FirstComponent,
     SecondComponent,
     ChildAComponent,
-    ChildBComponent
+    ChildBComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
