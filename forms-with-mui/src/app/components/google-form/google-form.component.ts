@@ -52,7 +52,7 @@ export class GoogleFormComponent implements OnInit {
       {
         firstName: ['', Validators.required],
         lastName: ['', Validators.required],
-        email: ['', Validators.required],
+        email: ['', [Validators.required, Validators.email]],
         password: ['', [Validators.required, Validators.minLength(6)]],
         confirm: [''],
       },
