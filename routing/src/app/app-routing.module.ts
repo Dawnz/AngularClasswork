@@ -25,6 +25,11 @@ const routes: Routes = [
     component: SecondComponent,
   },
   {
+    path: 'loading',
+    loadChildren: () =>
+      import('./loading/loading.module').then((m) => m.LoadingModule),
+  },
+  {
     path: '**',
     component: SecondComponent,
   },
