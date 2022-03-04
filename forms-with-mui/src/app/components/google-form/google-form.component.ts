@@ -16,13 +16,16 @@ import { CustomValidator } from 'src/app/validators/customvalidator.validator';
 })
 export class GoogleFormComponent implements OnInit {
   hide: boolean = true;
-  constructor(private formBuilder: FormBuilder) {}
+  constructor() {}
 
   validationForm: FormGroup = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    password: new FormControl(''),
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required]),
+    password: new FormControl('', [
+      Validators.required,
+      Validators.minLength(8),
+    ]),
     confirm: new FormControl(''),
   });
   // get f(): { [key: string]: AbstractControl } {
@@ -47,18 +50,5 @@ export class GoogleFormComponent implements OnInit {
     return this.validationForm.get('confirm');
   }
 
-  ngOnInit(): void {
-    this.validationForm = this.formBuilder.group(
-      {
-        firstName: ['', Validators.required],
-        lastName: ['', Validators.required],
-        email: ['', Validators.required],
-        password: ['', [Validators.required, Validators.minLength(6)]],
-        confirm: [''],
-      },
-      {
-        validators: [CustomValidator.match('password', 'confirm')],
-      }
-    );
-  }
+  ngOnInit(): void {}
 }

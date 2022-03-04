@@ -203,16 +203,16 @@
         </mat-form-field>
         <mat-form-field appearance="outline">
           <mat-label>Confirm </mat-label>
-          <!-- appConfirmEqualValidator="password" -->
           <input
             matInput
             placeholder="Confirm"
             formControlName="confirm"
+            appConfirmEqualValidator="password"
             name="confirm"
             [type]="hide ? 'password' : 'text'"
           />
-          <!-- <mat-error *ngIf="confirm?.errors?.['notEqual'] "> -->
-          <mat-error *ngIf="confirm?.errors?.['matching'] ">
+          <mat-error *ngIf="confirm?.errors?.['notEqual'] ">
+            <!-- <mat-error *ngIf="confirm?.errors?.['matching'] "> -->
             <svg
               aria-hidden="true"
               class="stUf5b LxE1Id"
@@ -240,7 +240,7 @@
       </div>
     </form>
     <div class="logo">
-      <img src="./assets/google_img.svg" />
+      <img src="/assets/image/google_img.svg" />
       <h3>One Account. All of google working for you</h3>
     </div>
   </div>
