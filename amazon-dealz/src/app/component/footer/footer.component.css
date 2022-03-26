@@ -1,0 +1,81 @@
+h3 {
+  margin: 0;
+}
+.follow {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 30px 0;
+  grid-template-columns: 0.5fr 1.2fr;
+}
+.follow .handles {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe {
+  border-top: 1px solid #abafc7;
+  padding-top: 24px;
+}
+.follow-subscribe {
+  min-width: 360px;
+}
+.grey-txt {
+  color: #767b80;
+  list-style-type: none;
+}
+
+.email-button {
+  height: 48px;
+  display: flex;
+  padding: 24px 0;
+}
+.email-button input {
+  height: 100%;
+  width: 65%;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 24px;
+}
+.email-button span {
+  background-color: #50af00;
+  height: 100%;
+  width: 35%;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* text-align: center; */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: white;
+}
+.footer-wrapper,
+.footer-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+.footer-wrapper-sm,
+.footer-list-sm {
+  display: grid;
+}
+.footer-list-sm {
+  grid-auto-flow: column;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  justify-content: space-between;
+}
+.footer-wrapper {
+  /* should be modified */
+  padding: 77px;
+  margin: auto;
+}
+.footer-list {
+  margin-top: 21px;
+  min-width: 425px;
+}
+.footer-list li {
+  padding: 4px;
+}
+.about-us p {
+  width: 382px;
+}

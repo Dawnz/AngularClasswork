@@ -1,0 +1,73 @@
+<div class="blog-wrapper">
+  <div class="title">
+    <div class="title-icon">
+      <span>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.66669 14.6666V25.3333M6.66669 21.3333C5.60582 21.3333 4.58841 21.7547 3.83826 22.5048C3.08811 23.255 2.66669 24.2724 2.66669 25.3333C2.66669 26.3941 3.08811 27.4115 3.83826 28.1617C4.58841 28.9118 5.60582 29.3333 6.66669 29.3333C7.72755 29.3333 8.74497 28.9118 9.49511 28.1617C10.2453 27.4115 10.6667 26.3941 10.6667 25.3333C10.6667 24.2724 10.2453 23.255 9.49511 22.5048C8.74497 21.7547 7.72755 21.3333 6.66669 21.3333V21.3333ZM6.66669 1.33325C19.9 1.33325 30.6667 12.0999 30.6667 25.3333L6.66669 1.33325ZM24 25.3333C24 15.7759 16.224 7.99992 6.66669 7.99992L24 25.3333ZM17.3334 25.3333C17.3334 19.4519 12.548 14.6666 6.66669 14.6666L17.3334 25.3333Z"
+            stroke="#1E2914"
+            stroke-width="4"
+          />
+        </svg>
+      </span>
+      <h2>Our Blog</h2>
+    </div>
+    <div class="view-more">
+      <button>View All</button>
+    </div>
+  </div>
+  <div
+    [class]="
+      currentScreenSize != 'XSmall' && currentScreenSize != 'Small'
+        ? 'card-wrapper'
+        : 'card-wrapper-sm'
+    "
+  >
+    <div class="blog-card mySlides3 fade3">
+      <div class="blog-img">
+        <img alt="watsapp-icon" src="assets/images/unsplash__qsuER9xYOY.png" />
+      </div>
+      <p>
+        Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 256GB Storage) with
+        No Cost EMI/Additional Exchange Offers
+      </p>
+      <p class="grey-txt">Published Feb. 6, 2022 by <b>Marc</b></p>
+    </div>
+    <div class="blog-card mySlides3 fade3">
+      <div class="blog-img">
+        <img alt="watsapp-icon" src="assets/images/unsplash__qsuER9xYOY.png" />
+      </div>
+      <p>
+        Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 256GB Storage) with
+        No Cost EMI/Additional Exchange Offers
+      </p>
+      <p class="grey-txt">Published Feb. 6, 2022 by <b>Marc</b></p>
+    </div>
+    <div class="blog-card mySlides3 fade3">
+      <div class="blog-img">
+        <img alt="watsapp-icon" src="assets/images/unsplash__qsuER9xYOY.png" />
+      </div>
+      <p>
+        Samsung Galaxy Z Fold3 5G (Phantom Black, 12GB RAM, 256GB Storage) with
+        No Cost EMI/Additional Exchange Offers
+      </p>
+      <p class="grey-txt">Published Feb. 6, 2022 by <b>Marc</b></p>
+    </div>
+  </div>
+  <div class="slider">
+    <div
+      class="line-tabs"
+      *ngIf="currentScreenSize == 'XSmall' || currentScreenSize == 'Small'"
+    >
+      <span class="dot3" (click)="currentSlide(1)"></span>
+      <span class="dot3" (click)="currentSlide(2)"></span>
+      <span class="dot3" (click)="currentSlide(3)"></span>
+    </div>
+  </div>
+</div>

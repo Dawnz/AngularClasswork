@@ -1,0 +1,22 @@
+.copy-wrapper {
+  border-top: 1px solid #767b80;
+  color: #767b80;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+.terms-privacy {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 40px;
+}
+.terms {
+  padding-right: 35px;
+  border-right: 1px solid #abafc7;
+}
+
+.grey-txt {
+  color: #767b80;
+  margin: 0;
+  /* padding-top: 35px; */
+}

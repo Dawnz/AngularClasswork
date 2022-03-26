@@ -1,0 +1,22 @@
+.ads-wrapper {
+  text-align: center;
+  text-transform: capitalize;
+  background: #ebebeb;
+  /* remember to remove global width */
+  padding: 34px 0;
+}
+.ads-wrapper p {
+  color: #767b80;
+}
+.green {
+  color: #50af00;
+}
+.ads-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.par-content {
+  width: 719px;
+  margin: auto;
+  font-size: 18px;
+}
