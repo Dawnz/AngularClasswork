@@ -1,0 +1,22 @@
+<div class="review-container">
+  <h1 class="title">What my Clients Say</h1>
+  <p class="quote">
+    <i>“Feedback is the breakfast of champions.” </i>
+    -Ken Blanchard
+  </p>
+  <div class="divider"></div>
+  <div class="review-cards">
+    <mat-card class="card" *ngFor="let card of cardContents">
+      <mat-icon> format_quote</mat-icon>
+      <div class="img"><img src="{{ card.image }}" alt="icon" /></div>
+
+      <!-- <mat-card-subtitle>subtest</mat-card-subtitle> -->
+      <mat-card-content
+        ><p>{{ card.paragraph }}</p></mat-card-content
+      >
+
+      <div class="small-divider"></div>
+      <mat-card-content>{{ card.author }}</mat-card-content>
+    </mat-card>
+  </div>
+</div>

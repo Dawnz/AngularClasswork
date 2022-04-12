@@ -1,0 +1,31 @@
+.work-exp-wrapper {
+  background-color: #f3f6f6;
+  padding: 0 20px 20px 20px;
+}
+.work-exp-cards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  /* justify-content: space-around; */
+}
+.progress-bar {
+  background-color: rgb(47, 193, 255);
+  height: 22px;
+  width: 10;
+  padding-left: 10px;
+  border-radius: 8px;
+  color: white;
+}
+.total-progress {
+  background-color: #f3f6f6;
+  margin: 12px;
+  border-radius: 8px;
+}
+.work-exp-cards mat-card mat-card-content ul {
+  list-style-type: none;
+}
+
+.work-exp-cards mat-card mat-card-content ul li p:before {
+  content: "✓ ";
+  color: green;
+}

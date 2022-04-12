@@ -1,0 +1,50 @@
+.portfolio-container {
+  padding: 100px 0 20px 0;
+}
+.portfolio-wrapper {
+  display: grid;
+  row-gap: 40px;
+  /* padding: 20px; */
+  justify-content: center;
+}
+.html-js .img,
+.react-img .img {
+  width: 800px;
+  height: 400px;
+}
+.angular-img,
+.angularjs-img {
+  display: grid;
+  gap: 20px;
+}
+.angularjs-img .img,
+.angular-img .img {
+  width: 325;
+  height: 186px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.img {
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* opacity: 0.5; */
+  filter: brightness(80%);
+}
+.img:hover {
+  /* opacity: 1; */
+  filter: brightness(100%);
+  transform: translateY(-10px);
+}
+.top-half,
+.bot-half {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-items: baseline; */
+  gap: 20px;
+}

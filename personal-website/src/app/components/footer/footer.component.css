@@ -1,0 +1,29 @@
+.footer-container {
+  font-family: Open Sans;
+}
+.footer-wrapper {
+  background-color: rgb(16, 18, 24);
+  color: white;
+}
+.upper-footer,
+.upper-footer nav ul {
+  display: grid;
+  grid-auto-flow: column;
+}
+.upper-footer {
+  grid-template-columns: 20% 60% 20%;
+}
+.upper-footer nav ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+nav ul li a,
+.contact-us p a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+.copywright {
+  text-align: center;
+  padding-bottom: 6px;
+}

@@ -1,0 +1,29 @@
+<div class="work-exp-container">
+  <div class="work-exp-wrapper">
+    <h1 class="title">Work Experience</h1>
+    <p class="quote">
+      <i>"Experience is the teacher of all things" </i>
+      -Julius Caesar
+    </p>
+
+    <div class="divider"></div>
+    <div class="work-exp-cards" id="myBar2">
+      <mat-card *ngFor="let card of cardContents">
+        <mat-card-title>{{ card.title }}</mat-card-title>
+        <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
+        <mat-card-content
+          ><ul *ngFor="let par of card.paragraph">
+            <li>
+              <p>{{ par }}</p>
+            </li>
+          </ul></mat-card-content
+        >
+        <div class="total-progress">
+          <div class="progress-bar" width="move(20,event.target)">
+            {{ card.title }}
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

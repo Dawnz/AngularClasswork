@@ -1,0 +1,38 @@
+<div class="header-container">
+  <div
+    class="header-wrapper"
+    [ngClass]="{
+      gradient1: currentRoute == 'contact',
+      gradient2: currentRoute != 'home' && currentRoute != 'contact'
+    }"
+  >
+    <div class="logo">
+      <img src="assets/images/Logo.png" alt="logo" />
+    </div>
+    <div class="navbar">
+      <h1>Dawnz Apps and Services</h1>
+      <nav>
+        <ul>
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="about">About</a></li>
+          <li><a routerLink="portfolio">Portfolio</a></li>
+          <li><a routerLink="contact">Contact</a></li>
+        </ul>
+      </nav>
+      {{ screenSize }}
+      <h1 class="title">
+        {{
+          currentRoute != "home"
+            ? currentRoute == "about"
+              ? "About me"
+              : currentRoute == "contact"
+              ? "Contact us"
+              : (currentRoute | titlecase)
+            : null
+        }}
+      </h1>
+      <div *ngIf="currentRoute != 'home'" class="divider"></div>
+    </div>
+    <button class="btn">Hire Me</button>
+  </div>
+</div>

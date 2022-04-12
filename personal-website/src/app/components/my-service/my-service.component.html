@@ -1,0 +1,29 @@
+<div class="my-service-container">
+  <h1 class="title">What Services im providing</h1>
+  <p class="quote">
+    <i>
+      "To give real service you must add something which cannot be bought or
+      measured with money, and that is sincerity and integrity."
+    </i>
+    - Don Alden Adams
+  </p>
+  <div class="divider"></div>
+  <div class="service-cards">
+    <mat-card class="card" *ngFor="let card of cardContents">
+      <img src="{{ card.image }}" alt="icon" />
+
+      <mat-card-title>{{ card.title }}</mat-card-title>
+      <!-- <mat-card-subtitle>subtest</mat-card-subtitle> -->
+      <mat-card-content
+        ><p>{{ card.paragraph }}</p></mat-card-content
+      >
+      <button mat-button>
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+      <!-- <div class="small-divider"></div>
+      <mat-card-content
+        ><p>{{ card.author }}</p></mat-card-content
+      > -->
+    </mat-card>
+  </div>
+</div>

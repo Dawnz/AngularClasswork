@@ -1,0 +1,25 @@
+/* .my-service-container */
+
+.service-cards {
+  /* display: grid;
+  grid-auto-flow: column; */
+  display: flex;
+  column-gap: 2vw;
+  justify-content: space-around;
+}
+.service-cards mat-card {
+  width: 300px;
+  /* display: grid; */
+  text-align: center;
+  /* justify-items: center; */
+  /* align-items: flex-end; */
+}
+/* .small-divider {
+  margin: auto;
+} */
+.service-cards img {
+  width: 80px;
+}
+.service-cards mat-card-title {
+  padding: 12px 0;
+}

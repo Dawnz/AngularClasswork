@@ -1,0 +1,58 @@
+.contact-container {
+  background-color: #f3f6f6;
+  padding: 100px 0 20px 0;
+}
+.contact-cards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  text-align: center;
+  justify-items: center;
+}
+.contact-cards mat-card {
+  height: 186px;
+  width: 386px;
+  font-family: Display Playfair;
+}
+.contact-cards mat-card mat-icon {
+  margin: 24px 0;
+  font-size: 35px;
+  color: #6ec1e4;
+}
+.contact-cards mat-card mat-card-title {
+  padding: 8px 0;
+}
+.form-inputs {
+  display: grid;
+}
+.form-card {
+  font-family: Display Playfair;
+  display: grid;
+  padding: 40px;
+  width: 500px;
+}
+.form-card h2 {
+  font-size: 28px;
+}
+.contact-form-handles {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  justify-content: space-around;
+}
+.contact-wrapper {
+  display: grid;
+  row-gap: 50px;
+}
+.small-divider {
+  margin-bottom: 12px;
+}
+.handles ul {
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: column;
+}
+.message-me {
+  width: 420px;
+  padding: 20px 0;
+}

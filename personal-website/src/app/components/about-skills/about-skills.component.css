@@ -1,0 +1,23 @@
+.progress-bar {
+  background-color: rgb(47, 193, 255);
+  height: 22px;
+  width: 10;
+  padding-left: 10px;
+  margin: 12px;
+  border-radius: 8px;
+  color: white;
+}
+.about-skills-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-content: space-around; */
+  align-items: baseline;
+}
+
+.skills {
+  width: 500px;
+}
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  /* font-family: Playfair Display; */
+}
+
+@font-face {
+  font-family: Indie Flower;
+  src: url("assets/fonts/IndieFlower-Regular.ttf");
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url("assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Open-Sans;
+  src: url("assets/fonts/OpenSans-VariableFont.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Playfair Display;
+}
+/* .mat-typography,
+.mat-card {
+  font-family: Playfair Display;
+} */
+p {
+  font-size: 17px;
+  font-family: Open-Sans;
+}
+.btn {
+  border-radius: 5px;
+  padding: 15px 30px;
+  background-color: #6ec1e4;
+  color: white;
+  font-family: serif;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 16px;
+  transition: all 0.2s linear;
+  border: none;
+}
+.btn:hover {
+  background-color: #0274be;
+}
+h1.title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+}
+.divider {
+  width: 100px;
+  height: 6px;
+  margin: 20px auto;
+  padding: 2px 0;
+  border-top: rgb(47, 193, 255);
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+.small-divider {
+  width: 50px;
+  height: 6px;
+  /* margin: 20px; */
+  padding: 2px 0;
+  border-top: rgb(47, 193, 255);
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+.quote {
+  color: rgb(76, 82, 83);
+  text-align: center;
+  margin: auto;
+  width: 500px;
+}

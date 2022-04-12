@@ -1,0 +1,97 @@
+<div class="contact-container">
+  <div class="contact-wrapper">
+    <div class="contact-cards">
+      <mat-card *ngFor="let card of contactCard">
+        <mat-icon>{{ card.icon }}</mat-icon>
+        <mat-card-title>{{ card.title }}</mat-card-title>
+        <mat-card-subtitle>{{ card.subtitle }}</mat-card-subtitle>
+      </mat-card>
+    </div>
+    <div class="contact-form-handles">
+      <mat-card class="form-card">
+        <form
+          action="https://smtpjs.com/v3/smtp.js"
+          class="c-form"
+          #contactInfo="ngForm"
+          [formGroup]="validationForm"
+        >
+          <!-- (ngSubmit)="onSubmit(contactInfo.value)" -->
+          <h2>Get in Touch</h2>
+          <!-- {{ screensize }} -->
+          <div class="small-divider"></div>
+          <div class="form-inputs">
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your name</mat-label>
+              <input
+                matInput
+                name="fullName"
+                formControlName="fullName"
+                type="text"
+              />
+              <mat-error *ngIf="fullName?.errors?.['required'] ">
+                <mat-icon>error</mat-icon>
+                Please enter your name
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your email address</mat-label>
+              <input
+                matInput
+                name="email"
+                formControlName="email"
+                type="email"
+              />
+              <mat-error *ngIf="email?.errors?.['required'] ">
+                <mat-icon>error</mat-icon>
+                Please enter your email
+              </mat-error>
+              <mat-error *ngIf="email?.errors?.['email'] && email?.invalid">
+                <mat-icon>error</mat-icon>
+                Please enter a valid email in the format
+                <i>example@email.com</i>
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Enter your message</mat-label>
+              <textarea
+                name="message"
+                matInput
+                formControlName="message"
+              ></textarea>
+              <mat-error *ngIf="message?.errors?.['maxlength'] ">
+                <mat-icon>error</mat-icon>
+                Please enter less than 100 characters
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </mat-card>
+      <div class="message-me">
+        <h2>Message me</h2>
+        <div class="small-divider"></div>
+        <p>
+          one of the most important lessons we’ve learned over the years is that
+          what WE think is best for the app or service doesn’t really matter.
+          What matters most is the challenges our customers – that’s you – are
+          facing, and how we can better solve them
+        </p>
+        <p>Feel free to send me a message on any of these handles</p>
+        <div class="handles">
+          <ul>
+            <li>
+              <img src="assets/images/handles/linkedin.svg" alt="linkedin" />
+            </li>
+            <li><img src="assets/images/handles/github.svg" alt="github" /></li>
+            <li>
+              <img src="assets/images/handles/youtube.svg" alt="youtube" />
+            </li>
+            <li>
+              <img src="assets/images/handles/twitter.svg" alt="twitter" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
